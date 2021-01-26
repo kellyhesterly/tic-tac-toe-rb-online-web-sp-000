@@ -36,7 +36,7 @@ end
 
 def turn_count(board)
   counter = 0
-  board.select do |element|
+  board.all? do |element|
     element == "X" || element == "O"
     counter += 1
   end
