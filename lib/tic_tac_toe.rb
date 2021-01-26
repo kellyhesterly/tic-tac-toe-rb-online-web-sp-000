@@ -45,7 +45,7 @@ end
 
 def current_player(board)
   if board.odd? do |number|
-    true 
+    true
     return "X"
   end
   end
