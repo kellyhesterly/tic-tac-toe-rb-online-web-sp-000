@@ -51,9 +51,9 @@ end
 def turn(board)
   "Please select 1-9 to make a move."
   input = gets.strip
-  input_to_index(input)
   index = input_to_index(input)
   if valid_move?(board, index)
+    move(board, index, input)
     display_board(board)
   else
     "Whoops! I'm sorry that's not a valid move. Please try again."
