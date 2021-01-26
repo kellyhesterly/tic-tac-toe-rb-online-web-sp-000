@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-01-26T21:35:31+00:00">2021-01-26T21:35:31+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-01-26T21:37:29+00:00">2021-01-26T21:37:29+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -216,8 +216,8 @@
           <code class="ruby">def input_to_index(input)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="22">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="4" data-linenumber="22">
+          <span class="hits">4</span>
           
           <code class="ruby">  input.to_i - 1</code>
         </li>
@@ -240,8 +240,8 @@
           <code class="ruby">def move(board, index, token)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="26">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="26">
+          <span class="hits">4</span>
           
           <code class="ruby">  board[index] = token</code>
         </li>
@@ -411,19 +411,19 @@
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">  input_to_index(input)</code>
+          <code class="ruby">  index = input_to_index(input)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
-          <code class="ruby">  index = input_to_index(input)</code>
+          <code class="ruby">  if valid_move?(board, index)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="56">
           <span class="hits">1</span>
           
-          <code class="ruby">  if valid_move?(board, index)</code>
+          <code class="ruby">    move(board, index, input)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="57">
