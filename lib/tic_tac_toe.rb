@@ -64,7 +64,7 @@ def turn(board)
 end
 
 def won?(board)
-  WIN_COMBINATIONS.detect do |combo|
+  WIN_COMBINATIONS.select do |combo|
 
   position_1 = board[combo[0]]
   position_2 = board[combo[1]]
