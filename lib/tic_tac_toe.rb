@@ -47,3 +47,6 @@ def current_player(board)
   turn_count(board).odd?
   "X"
 end
+
+def turn(board)
+end
