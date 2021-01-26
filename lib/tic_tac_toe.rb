@@ -31,6 +31,5 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  input = gets
-  position_taken?(board, index) && input_to_index(input).between(0,8)
+  position_taken?(board, index) && input_to_index(index).between(0,8)
 end
