@@ -49,9 +49,9 @@ def current_player(board)
 end
 
 def turn(board)
+  "Please select 1-9 to make a move."
   input = gets
   index = input_to_index(input)
-  input_to_index(input)
   if valid_move?(board, index)
     display_board(board)
   else
