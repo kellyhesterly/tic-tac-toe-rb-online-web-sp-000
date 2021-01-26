@@ -97,6 +97,9 @@ end
 
 def play(board)
   input = gets
-  until over?(board)
-    play(board)
+  play(board) until over?(board)
+  if won?(board)
+    "Congratulations #{winner(board)}!"
+  else draw?(board)
+    "It's a draw!"
 end
