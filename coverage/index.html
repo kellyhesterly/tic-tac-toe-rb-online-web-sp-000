@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-01-26T22:41:45+00:00">2021-01-26T22:41:45+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-01-26T22:43:11+00:00">2021-01-26T22:43:11+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#de8db87e5a4c8bf1df23bad42832fb456b680748" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>102</td>
+        <td>105</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -687,16 +687,34 @@
         <li class="never" data-hits="" data-linenumber="100">
           
           
-          <code class="ruby">  until over?(board)</code>
+          <code class="ruby">  play(board) until over?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">    play(board)</code>
+          <code class="ruby">  if won?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby">    &quot;Congratulations #{winner(board)}!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby">  else draw?(board)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="104">
+          
+          
+          <code class="ruby">    &quot;It&#39;s a draw!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
           
           
           <code class="ruby">end</code>
