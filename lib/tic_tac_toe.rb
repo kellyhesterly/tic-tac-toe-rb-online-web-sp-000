@@ -76,3 +76,6 @@ def won?(board)
    end
   end
 end
+
+def full?(board)
+end
