@@ -44,9 +44,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if board.odd? do |number|
-    true
-    return "X"
-  end
-  end
+  turn_count(board).odd? 
+  "X"
+end
 end
