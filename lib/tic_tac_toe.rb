@@ -39,6 +39,6 @@ def turn_count(board)
   board.each do |element|
     element == "X" || element == "O"
     counter += 1
-    return element.to_i
+   element.to_i
   end
 end
