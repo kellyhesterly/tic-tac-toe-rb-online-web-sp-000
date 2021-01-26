@@ -2,9 +2,18 @@
   "RSpec": {
     "coverage": {
       "/home/dynamic-course-0343/tic-tac-toe-rb-online-web-sp-000/lib/tic_tac_toe.rb": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1611693947
+    "timestamp": 1611694035
   }
 }
