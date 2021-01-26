@@ -98,6 +98,6 @@ end
 def play(board)
   input = gets
   play(board) until over?(board)
-    
+
   end
 end
