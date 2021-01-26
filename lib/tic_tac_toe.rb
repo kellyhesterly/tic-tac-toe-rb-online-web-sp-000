@@ -46,6 +46,7 @@ end
 def current_player(board)
   turn_count(board).odd?
   "X"
+else "O"
 end
 
 def turn(board)
@@ -53,7 +54,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index, input)
+    move(board, index, current_player(board))
     display_board(board)
   else
     "Whoops! I'm sorry that's not a valid move. Please try again."
