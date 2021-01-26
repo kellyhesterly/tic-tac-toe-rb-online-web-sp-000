@@ -10,5 +10,5 @@ WIN_COMBINATIONS  = [
 ]
 
 
-def display_bard(board)
+def display_board(board)
 end
