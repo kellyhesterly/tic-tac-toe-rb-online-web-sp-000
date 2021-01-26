@@ -31,6 +31,6 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  input = gets.strip
+  input = gets.chomp
   input_to_index(input).between?(0,8) && !position_taken?(board, index)
 end
