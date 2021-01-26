@@ -46,8 +46,8 @@ end
 def current_player(board)
   if turn_count(board).odd?
   "O"
-else "X"
-  end
+  else "X"
+ end
 end
 
 def turn(board)
@@ -60,5 +60,19 @@ def turn(board)
   else
     "Whoops! I'm sorry that's not a valid move. Please try again."
     turn(board)
+  end
+end
+
+def won?(board)
+  WIN_COMBINATIONS.detect do |combo|
+
+  position_1 = board[combo[0]]
+  position_2 = board[combo[1]]
+  position_3 = board[combo[2]]
+
+  if position_1 == "X" && position_2 == "X" && position == "X" ||
+     position_1 == "O" && position_2 == "O" && position == "O"
+     return combo
+   end
   end
 end
