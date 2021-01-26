@@ -96,7 +96,7 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
+  input = gets.strip
   play(board) until over?(board)
   if won?(board)
     "Congratulations #{winner(board)}!"
