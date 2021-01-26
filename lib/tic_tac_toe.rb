@@ -78,4 +78,6 @@ def won?(board)
 end
 
 def full?(board)
+  position_taken?(board, index)
+  board[index] == "X" || board[index] == "O"
 end
