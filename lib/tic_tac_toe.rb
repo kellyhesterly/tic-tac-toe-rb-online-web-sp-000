@@ -54,6 +54,7 @@ def turn(board)
   if valid_move?(board, index)
     display_board(board)
   else
+    "Whoops! I'm sorry that's not a valid move. Please try again"
     turn(board)
   end
 end
